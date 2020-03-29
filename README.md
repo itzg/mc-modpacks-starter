@@ -1,4 +1,4 @@
-This is a starter repository that helps you get setup with `itzg/minecraft-server` containers that run FTB or CurseForge modpacks.
+This is a starter repository that helps you get setup with [`itzg/minecraft-server`](https://hub.docker.com/repository/docker/itzg/minecraft-server) containers that run FTB or CurseForge modpacks.
 
 An example Docker Compose file has been created in [`valhelsia`](valhelsia); however, you will need to download and place the corresponding modpack zip file in the [`modpacks`](modpacks) directory. See the [README there](modpacks/README.md) for a download link.
 
