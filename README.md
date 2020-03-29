@@ -9,4 +9,9 @@ cd valhelsia
 docker-compose up -d
 ```
 
+You can watch the logs by using
+```
+docker-compose logs -f
+```
+
 The example will attach the container's `/data` path to the local directory `data/valhelsia`. You can adjust configuration in there and restart the container to pick up those changes.
