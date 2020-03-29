@@ -1,18 +1,20 @@
 This is a starter repository that helps you get setup with [`itzg/minecraft-server`](https://hub.docker.com/repository/docker/itzg/minecraft-server) containers that run FTB or CurseForge modpacks.
 
-An example Docker Compose file has been created in [`valhelsia`](valhelsia); however, you will need to download and place the corresponding modpack zip file in the [`modpacks`](modpacks) directory. See the [README there](modpacks/README.md) for a download link.
+An example Docker Compose file has been created in [`valhelsia`](valhelsia).
 
-Go into the corresponding directory and bring up the Docker composition, such as
+## Setup
+1. Download and place the corresponding modpack zip file in the [`modpacks`](modpacks) directory. See the [README there](modpacks/README.md) for a download link.
 
-```
-cd valhelsia
-docker-compose up -d
-```
+2. Go into the corresponding directory and bring up the Docker composition, such as
+   ```
+   cd valhelsia
+   docker-compose up -d
+   ```
 
-You can watch the logs by using
-```
-docker-compose logs -f
-```
+   You can watch the logs by using
+   ```
+   docker-compose logs -f
+   ```
 
 The example will attach the container's `/data` path to the local directory `data/valhelsia`. You can adjust configuration in there and restart the container to pick up those changes.
 
