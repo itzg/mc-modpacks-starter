@@ -1,0 +1,14 @@
+version: "3.7"
+
+services: 
+  mc:
+    image: itzg/minecraft-server
+    volumes:
+      - ../modpacks:/modpacks:ro
+      - ../data/valhelsia:/data
+    environment: 
+      EULA: "TRUE"
+      TYPE: CURSEFORGE
+      CF_SERVER_MOD: /modpacks/Valhelsia_SERVER-2.1.3a.zip
+    ports:
+      - 25565:25565
