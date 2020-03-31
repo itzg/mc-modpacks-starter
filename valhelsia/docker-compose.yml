@@ -10,5 +10,6 @@ services:
       EULA: "TRUE"
       TYPE: CURSEFORGE
       CF_SERVER_MOD: /modpacks/Valhelsia_SERVER-2.1.3a.zip
+      MEMORY: 2g
     ports:
       - 25565:25565
