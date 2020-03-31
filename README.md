@@ -33,3 +33,7 @@ b7fa79011ed6        itzg/minecraft-server   "/start"            About a minute a
    2. Change the zip filename in `CF_SERVER_MOD` to the appropriate modpack you're adding
    3. If running alongside others from this starter, change the host port (left part) from 25565 to something distinct, like incrementing to 25566.
 3. Download the **server** modpack file and place in `modpacks` along with the others
+
+## Why "vanilla"
+
+The [`vanilla`](vanilla) configuration does not include a modpack and is provided as a baseline configuration.
