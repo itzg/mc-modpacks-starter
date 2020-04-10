@@ -1,0 +1,15 @@
+version: "3.7"
+
+services: 
+  mc:
+    image: itzg/minecraft-server
+    volumes:
+      - ../modpacks:/modpacks:ro
+      - ../data/newbeginnings:/data
+    environment: 
+      EULA: "TRUE"
+      TYPE: CURSEFORGE
+      CF_SERVER_MOD: /modpacks/HR+New+Beginnings+Server.zip
+      MEMORY: 2g
+    ports:
+      - 25565:25565
