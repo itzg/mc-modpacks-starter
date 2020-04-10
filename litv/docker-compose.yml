@@ -1,0 +1,16 @@
+version: "3.7"
+
+services: 
+  mc:
+    image: itzg/minecraft-server
+    volumes:
+      - ../modpacks:/modpacks:ro
+      - ../data/litv:/data
+    environment: 
+      EULA: "TRUE"
+      TYPE: CURSEFORGE
+      CF_SERVER_MOD: /modpacks/LITV-Serverpack-1.18.zip
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      MEMORY: 2g
+    ports:
+      - 25565:25565
