@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    volumes:
+      - ../modpacks:/modpacks:ro
+      - ../data/all-the-mods:/data
+    environment:
+      EULA: "TRUE"
+      TYPE: CURSEFORGE
+      CF_SERVER_MOD: /modpacks/ATM3-5.12.3_Server-FULL.zip
+      USE_MODPACK_START_SCRIPT: "false"
+      MEMORY: 2g
+      OPS: itzg
+    ports:
+      - 25565:25565
