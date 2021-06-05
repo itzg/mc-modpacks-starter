@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    volumes:
+      - ../modpacks/towncraft/mods:/mods:ro
+      - ../data/towncraft:/data
+    environment:
+      EULA: "TRUE"
+      TYPE: FORGE
+      FORGEVERSION: 34.1.23
+      MEMORY: 2g
+      VERSION: 1.16.3
+    ports:
+      - 25565:25565
+      - 25575:25575

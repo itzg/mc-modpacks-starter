@@ -1,1 +1,3 @@
-*.zip
+! /README.md
+/*.zip
+/*:Zone.Identifier

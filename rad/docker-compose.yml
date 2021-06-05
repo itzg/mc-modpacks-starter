@@ -2,16 +2,18 @@ version: "3.7"
 
 services:
   mc:
-    image: itzg/minecraft-server
+    image: mc
     volumes:
       - ../modpacks:/modpacks:ro
-      - ../data/newbeginnings:/data
+      - ../data/rad:/data
     environment:
       EULA: "TRUE"
       TYPE: CURSEFORGE
-      CF_SERVER_MOD: /modpacks/HR New Beginnings Server.zip
-      USE_MODPACK_START_SCRIPT: "false"
       DEBUG: "true"
+      CF_SERVER_MOD: /modpacks/RAD-Serverpack-1.45.zip
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      MOTD: "New Beginnings V1.45"
+      MAX_PLAYERS: "4"
       MEMORY: 2g
     ports:
       - 25565:25565

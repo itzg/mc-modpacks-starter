@@ -5,11 +5,11 @@ services:
     image: itzg/minecraft-server:java8
     volumes:
       - ../modpacks:/modpacks:ro
-      - ../data/valhelsia:/data
+      - ../data/enigmatica6:/data
     environment:
       EULA: "TRUE"
       TYPE: CURSEFORGE
-      CF_SERVER_MOD: /modpacks/Valhelsia_SERVER-2.1.3a.zip
+      CF_SERVER_MOD: /modpacks/Enigmatica6Server-0.4.10.zip
       MEMORY: 2g
       OPS: itzg
     ports:
